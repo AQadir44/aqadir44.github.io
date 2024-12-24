@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqsa Abdul Moiz - AI Solutions Expert</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .nav-links a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+        /* Hero section styles */
+        .hero {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: #ffffff;
+            padding: 8rem 0 4rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #e74c3c;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #c0392b;
+        }
+
+        /* Services section styles */
+        .services {
+            padding: 4rem 0;
+            background-color: #ffffff;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        .service-card p {
+            color: #7f8c8d;
+        }
+
+        /* Experience section styles */
+        .experience {
+            padding: 4rem 0;
+            background-color: #f4f7f9;
+        }
+
+        .job-card {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .job-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .job-card .company-period {
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        /* Projects section styles */
+        .projects {
+            padding: 4rem 0;
+            background-color: #ffffff;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .project-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        .project-card p {
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+        }
+
+        .project-card a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Testimonials section styles */
+        .testimonials {
+            padding: 4rem 0;
+            background-color: #f4f7f9;
+        }
+
+        .testimonial-card {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        /* Contact section styles */
+        .contact {
+            padding: 4rem 0;
+            background-color: #2c3e50;
+            color: #ffffff;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin-bottom: 1rem;
+        }
+
+        /* .social-links {
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        } */
+
+        /* Footer styles */
+        footer {
+            background-color: #34495e;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .services-grid,
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Aqsa Abdul Moiz</div>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/aqsa-abdul-qadir/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/AQadir44" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>AI Solutions Expert</h1>
+                <p>Transforming businesses through cutting-edge AI and machine learning solutions. Let's innovate together.</p>
+                <a href="#contact" class="cta-btn">Get in Touch</a>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Services & Expertise</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>AI & Machine Learning Solutions</h3>
+                        <p>Custom AI models and algorithms to solve complex business problems and drive innovation.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Full Stack Development</h3>
+                        <p>End-to-end web application development with a focus on scalability and performance.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Cloud Architecture & DevOps</h3>
+                        <p>Designing and implementing robust cloud solutions on AWS, Azure, and GCP platforms.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Natural Language Processing</h3>
+                        <p>Leveraging NLP and LLM technologies to create intelligent, language-aware applications.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Data Analytics & Visualization</h3>
+                        <p>Transforming raw data into actionable insights through advanced analytics and visualizations.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Technical Leadership & Consulting</h3>
+                        <p>Strategic guidance and mentorship to help teams excel in AI and software development projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="job-card">
+                    <h3>Technical Lead Software/AI</h3>
+                    <p class="company-period">BnR360 | Dec 2022 - Present</p>
+                    <p>Led a high-performing development team, improving project delivery timelines by 70%. Developed and integrated machine learning models and AI algorithms into products, resulting in a 35% increase in user engagement and a 25% boost in overall product efficiency.</p>
+                </div>
+                <div class="job-card">
+                    <h3>Python Developer</h3>
+                    <p class="company-period">5Cube | Jun 2022 - Nov 2022</p>
+                    <p>Utilized advanced Python programming techniques to optimize code for performance and scalability. Collaborated with cross-functional teams to design and implement APIs, reducing system response times by 40% and increasing throughput by 50%.</p>
+                </div>
+                <div class="job-card">
+                    <h3>Data Scientist / Python Developer</h3>
+                    <p class="company-period">Cloudlab | Jun 2020 - August 2021</p>
+                    <p>Collaborated on the 'Informed Decision Making for COVID-19' project. Developed predictive models using Python to forecast COVID-19 trends, achieving an accuracy rate of 85% and providing crucial insights for public health decision-making.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>AI-Powered User Management System</h3>
+                        <p>Developed a CRUD application with AI-driven insights for efficient user data management, resulting in a 30% increase in operational efficiency.</p>
+                        <a href="https://crud-application-chi.vercel.app/" target="_blank" rel="noopener noreferrer">View Project →</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Intelligent Employee Management System</h3>
+                        <p>Created a comprehensive system for managing employee information and tasks, incorporating machine learning for predictive analytics and resource allocation.</p>
+                        <a href="https://www.loom.com/share/002cafb2f84f40d6bf1393a1408ee622" target="_blank" rel="noopener noreferrer">View Demo →</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Smart Notes: AI-Powered Note-Taking App</h3>
+                        <p>Built a full-stack application for creating and managing notes, integrating NLP for automatic categorization and summarization of content.</p>
+                        <a href="https://github.com/AQadir44/Simple-Notes-Full-Stack-Application" target="_blank" rel="noopener noreferrer">View Repository →</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Automated Social Media Content Generation</h3>
+                        <p>Sleverages AI technology to quickly create engaging posts tailored to your audience, significantly reducing content creation time.</p>
+                        <a href="https://ai-social-media-gened.streamlit.app/" target="_blank" rel="noopener noreferrer">View Project →</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Intelligent Website Chatbot: Real-Time Analysis with GPT</h3>
+                        <p>The Intelligent Website Chatbot utilizes GPT technology to deliver real-time insights and analysis of websites through natural conversations</p>
+                        <a href="https://website-details-gened.streamlit.app/" target="_blank" rel="noopener noreferrer">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">Client Testimonials</h2>
+                <div class="testimonial-card">
+                    <p>"I have no hesitation in recommending Aqsa for her exceptional skills in Streamlit UI development, LLM training/model building, and product management. Her passion for innovation, dedication to excellence, and ability to deliver results make her a valuable asset to any team."</p>
+                    <p class="testimonial-author">- Tracy Greenwood, VP Alpha Data Implementation Lead - North America -State Street ·</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"I highly recommend Aqsa for any role requiring leadership, mentorship, and expertise in AI. She is a true asset to any team or project!"</p>
+                    <p class="testimonial-author">- Arslan Saeed, Senior Systems Development at Xerox</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="contact-info">
+                    <p>Ready to leverage AI for your business? </p>
+                        <p>Let's discuss how we can create innovative solutions together.</p>
+                    <p>Email: aqsamoizlakhani@gmail.com</p>
+                    <p>Phone: +92 334 1849448</p>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Aqsa Abdul Moiz. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
